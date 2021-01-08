@@ -8,12 +8,12 @@ public class FirstExercise {
         System.out.println("Enter something: ");
         String input = sc.nextLine();
 
-        System.out.println("You entered: " + input);
+        System.out.printf("You entered: %s%n", input);
 
         if (StringUtils.isNumeric(input)) {
-            System.out.println(input + " is a number");
+            System.out.printf("%s is a number%n", input);
         } else {
-            System.out.println(input + " is not a number");
+            System.out.printf("%s is not a number%n", input);
         }
 
         System.out.println("Flipped Case: " + StringUtils.swapCase(input));
